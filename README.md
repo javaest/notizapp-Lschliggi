@@ -97,38 +97,38 @@ Das digitale Notizbuch ermöglicht Mitarbeitern, ihre persönlichen Notizen zu s
 
 ## Datenbank ERP
 Entitäten und Attribute
-Benutzer (User)
 
-UserID (Primärschlüssel)
-Benutzername
-Passwort (verschlüsselt)
-Rolle (Admin, Group Leader, User)
-Erstelldatum
-Gruppe (Group)
+- Benutzer (User)
+- UserID (Primärschlüssel)
+- Benutzername
+- Passwort (verschlüsselt)
+- Rolle (Admin, Group Leader, User)
+- Erstelldatum
+- Gruppe (Group)
 
-GroupID (Primärschlüssel)
-Gruppenname
-Beschreibung
-Erstelldatum
-Notiz (Note)
+- GroupID (Primärschlüssel)
+- Gruppenname
+- Beschreibung
+- Erstelldatum
+- Notiz (Note)
 
-NoteID (Primärschlüssel)
-Titel
-Inhalt
-Erstellungsdatum
-Aktualisierungsdatum
-Ersteller (Fremdschlüssel → UserID)
-Sichtbarkeit (persönlich oder geteilt mit einer Gruppe)
-Gruppenmitgliedschaft (GroupMembership)
+- NoteID (Primärschlüssel)
+- Titel
+- Inhalt
+- Erstellungsdatum
+- Aktualisierungsdatum
+- Ersteller (Fremdschlüssel → UserID)
+- Sichtbarkeit (persönlich oder geteilt mit einer Gruppe)
+- Gruppenmitgliedschaft (GroupMembership)
 
-MembershipID (Primärschlüssel)
-GroupID (Fremdschlüssel → GroupID)
-UserID (Fremdschlüssel → UserID)
-Beitrittsdatum
-Rolle innerhalb der Gruppe (Member, Group Leader)
-Notizen teilen (NoteSharing)
+- MembershipID (Primärschlüssel)
+- GroupID (Fremdschlüssel → GroupID)
+- UserID (Fremdschlüssel → UserID)
+- Beitrittsdatum
+- Rolle innerhalb der Gruppe (Member, Group Leader)
+- Notizen teilen (NoteSharing)
 
-ShareID (Primärschlüssel)
-NoteID (Fremdschlüssel → NoteID)
-GroupID (Fremdschlüssel → GroupID)
+- ShareID (Primärschlüssel)
+- NoteID (Fremdschlüssel → NoteID)
+- GroupID (Fremdschlüssel → GroupID)
 
