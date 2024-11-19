@@ -98,6 +98,7 @@ Das digitale Notizbuch ermöglicht Mitarbeitern, ihre persönlichen Notizen zu s
 ## Datenbank ERP
 Entitäten und Attribute
 
+### User
 - Benutzer (User)
 - UserID (Primärschlüssel)
 - Benutzername
@@ -106,12 +107,14 @@ Entitäten und Attribute
 - Erstelldatum
 - Gruppe (Group)
 
+### Groups
 - GroupID (Primärschlüssel)
 - Gruppenname
 - Beschreibung
 - Erstelldatum
 - Notiz (Note)
 
+### Notes
 - NoteID (Primärschlüssel)
 - Titel
 - Inhalt
@@ -121,6 +124,7 @@ Entitäten und Attribute
 - Sichtbarkeit (persönlich oder geteilt mit einer Gruppe)
 - Gruppenmitgliedschaft (GroupMembership)
 
+### Members
 - MembershipID (Primärschlüssel)
 - GroupID (Fremdschlüssel → GroupID)
 - UserID (Fremdschlüssel → UserID)
@@ -128,6 +132,7 @@ Entitäten und Attribute
 - Rolle innerhalb der Gruppe (Member, Group Leader)
 - Notizen teilen (NoteSharing)
 
+### Shares
 - ShareID (Primärschlüssel)
 - NoteID (Fremdschlüssel → NoteID)
 - GroupID (Fremdschlüssel → GroupID)
