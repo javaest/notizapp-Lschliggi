@@ -1,47 +1,95 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/X2_4AfAh)
-# Aufgabenstellung: Planung eines digitalen Notizbuchs für Mitarbeiter
+# Projektmanagement Use Cases
 
-## Projektbeschreibung
-Die Mitarbeiter einer Firma wünschen sich ein digitales Notizbuch, das sowohl persönliche Notizen als auch Notizen zu Gruppen und Projekten speichert. Das Ziel dieses Notizbuchs ist es, die Effizienz und Zusammenarbeit der Mitarbeiter zu verbessern, indem Informationen zentral gespeichert und ausgetauscht werden können. Dabei sind folgende Funktionen und Anforderungen besonders wichtig:
+Class: Softwareentwicklung
+Type: Blended Learning
 
-- **Authentifizierung**: Das System muss eine sichere Authentifizierung bieten, um den Zugriff auf die Notizen zu schützen.
-- **Rollenmanagement**: Das System muss unterschiedliche Benutzerrollen unterstützen, nämlich Admin, User und Group Leader. Jede Rolle hat spezifische Berechtigungen und Verantwortlichkeiten.
-- **Gruppenmanagement**: Das System muss die Möglichkeit bieten, Benutzer verschiedenen Gruppen zuzuordnen. Notizen können dann innerhalb dieser Gruppen geteilt und verwaltet werden.
+### Use-Case: Digitales Notizbuch für Mitarbeiter
 
-Diese Funktionen sollen sicherstellen, dass die Mitarbeiter effizient zusammenarbeiten können und dass alle relevanten Informationen sicher und strukturiert verfügbar sind.
-## Vorbereitende Aufgabe
-Informieren Sie sich online über **UML- Use Case Diagramme, User Stories und UML-Komponentendiagramme**.
-## Aufgabenstellung
+### 1. **Use-Case-Titel:**
 
-### 1. **UML- Use Case Diagramm erstellen**
-Erstellen Sie ein UML-Use-Case-Diagramm, das die wichtigsten Funktionen des digitalen Notizbuchs darstellt. Berücksichtigen Sie dabei die folgenden Benutzer:
-- **Admin**: Kann Benutzer verwalten, Notizen erstellen und löschen, sowie Gruppen verwalten.
-- **Group Leader**: Kann Notizen in Gruppen erstellen und verwalten.
-- **User**: Kann persönliche Notizen erstellen und innerhalb von Gruppen auf Notizen zugreifen.
+Digitales Notizbuch für Mitarbeiter
 
-Das Diagramm sollte auch die wichtigsten Use Cases wie "Login", "Notiz erstellen", "Notiz teilen", "Gruppen verwalten" usw. darstellen.
+### Use Cases:
 
-### 2. **User Stories formulieren**
-Erstellen Sie zwei **User Stories**, die die Anforderungen aus der Perspektive der verschiedenen Benutzerrollen beschreiben. Beispiel:
-- "Als Admin möchte ich Benutzer verwalten können, um die Rechte innerhalb des Systems zu kontrollieren."
-- "Als Group Leader möchte ich Notizen mit meiner Gruppe teilen können, um die Zusammenarbeit zu fördern."
+![Use Cases.jpg](Use_Cases.jpg)
 
-### 3. **UML- Komponentendiagramm erstellen**
-Erstellen Sie ein UML-Komponentendiagramm, das die Architektur des digitalen Notizbuchs darstellt. Das Diagramm sollte folgende Komponenten enthalten:
-- **Frontend (HTML)**: Die Benutzeroberfläche, über die der Benutzer mit dem System interagiert.
-- **Backend (Spring Boot)**: Das Backend, das die Geschäftslogik und Authentifizierung mit JWT übernimmt.
-- **Datenbank**: Eine MySQL- oder PostgreSQL-Datenbank zur Speicherung von Benutzerdaten, Notizen und Gruppenzugehörigkeiten.
-- **JWT Authentifizierung**: Die Komponente, die die Authentifizierung und Autorisierung übernimmt.
-### 4. **Weitere Implementierung**
-Beschreiben Sie, welche weiteren Überlegungen und Diagramme nötigen sind, bevor mit der Implementierung begonnen werden kann
+### 2. **Ziel:**
 
-### 5. **Werkzeuge zur Erstellung der UML-Diagramme**
-Verwenden Sie ein geeignetes Tool, um die UML-Diagramme zu erstellen (z.B. draw.io)
+Verbesserung der Effizienz und Zusammenarbeit der Mitarbeiter durch eine zentrale Plattform für persönliche und teambezogene Notizen.
 
-### 6. **Zusätzliche Anforderungen**
-- Die Diagramme sollten klar und strukturiert sein.
-- Achten Sie darauf, dass Sie alle relevanten Aspekte der Projektbeschreibung abdecken.
+### 3. **Akteure:**
 
-## Abgabekriterien
-- Alle Diagramme müssen als Bild- oder PDF-Datei abgegeben werden.
-- Die **User Stories** und **Use Case Diagramme** müssen logisch und vollständig sein.
+- **Mitarbeiter:** Nutzen das Notizbuch, um persönliche Notizen zu erstellen und Informationen zu Projekten und Gruppen zu teilen.
+- **Teamleiter:** Verwenden das Notizbuch, um Projektfortschritte zu dokumentieren und Informationen mit dem Team zu teilen.
+- **IT-Administratoren:** Verantwortlich für die Integration des Notizbuchs in die bestehende IT-Infrastruktur und die Verwaltung der Zugriffsrechte.
+
+### 4. **Voraussetzungen:**
+
+- Mitarbeiter haben Zugang zu einem Gerät mit Internetverbindung.
+- Die bestehende IT-Infrastruktur unterstützt die Integration des Notizbuchs.
+- Mitarbeiter haben die nötigen Anmeldedaten für den Zugang.
+
+### 5. **Beschreibung:**
+
+Das digitale Notizbuch ermöglicht Mitarbeitern, ihre persönlichen Notizen zu speichern und zu organisieren, sowie Notizen zu Projekten und Gruppen zu erstellen und zu teilen. Die Anwendung soll eine benutzerfreundliche Oberfläche bieten, die folgende Funktionen unterstützt:
+
+- **Erstellen von Notizen:** Benutzer können Textnotizen, To-Do-Listen und Links einfügen.
+- **Kategorisieren von Notizen:** Benutzer können Notizen nach Projekten oder Gruppen sortieren.
+- **Kollaboration:** Benutzer können Notizen mit Kollegen teilen, Kommentare hinzufügen und gemeinsam an Notizen arbeiten.
+- **Suchfunktion:** Benutzer können nach Stichworten in Notizen suchen.
+- **Integration mit bestehenden Tools:** Das Notizbuch sollte mit anderen Tools wie E-Mail, Kalender und Projektmanagement-Software kompatibel sein.
+- **Zugriffsrechte:** IT-Administratoren können Benutzerrechte verwalten, um den Zugriff auf bestimmte Notizen oder Projekte zu steuern.
+
+### 6. **Ablauf:**
+
+- **Hauptablauf:**
+    1. Der Mitarbeiter loggt sich in das digitale Notizbuch ein.
+    2. Der Mitarbeiter erstellt eine neue Notiz (persönlich oder projektbezogen).
+    3. Der Mitarbeiter kategorisiert die Notiz und fügt Tags hinzu.
+    4. Der Mitarbeiter kann die Notiz mit Kollegen teilen.
+    5. Kollegen können die Notiz einsehen, Kommentare hinzufügen oder gemeinsam bearbeiten.
+    6. Der Mitarbeiter kann die Notiz jederzeit aktualisieren oder löschen.
+- **Alternativablauf:**
+    - **Zugriffsproblem:** Wenn ein Mitarbeiter versucht, auf eine Notiz zuzugreifen, für die er keine Berechtigung hat, erhält er eine entsprechende Fehlermeldung.
+
+### 7. **Erwartete Ergebnisse:**
+
+- Zentrale Speicherung und einfacher Zugriff auf Notizen.
+- Verbesserung der Zusammenarbeit durch die Möglichkeit, Informationen in Echtzeit zu teilen.
+- Erhöhung der Produktivität durch reduzierte Suchzeiten und bessere Organisation von Informationen.
+
+### 8. **Messbare Indikatoren:**
+
+- Anzahl der erstellten Notizen pro Mitarbeiter pro Woche.
+- Häufigkeit der Nutzung der Kollaborationsfunktionen (Kommentare, gemeinsame Bearbeitung).
+- Mitarbeiterzufriedenheit und Feedback zu Effizienzsteigerungen.
+
+## User Stories
+
+**User Story 1 (Admin):**
+
+> "Als Admin möchte ich Benutzer verwalten können, um sicherzustellen, dass nur autorisierte Personen Zugriff auf das System und die relevanten Gruppen haben."
+> 
+
+**Akzeptanzkriterien:**
+
+- Der Admin kann Benutzer hinzufügen und löschen.
+- Der Admin kann Benutzerrollen ändern (User, Group Leader).
+- Der Admin kann Passwörter zurücksetzen.
+
+---
+
+**User Story 2 (Group Leader):**
+
+> "Als Group Leader möchte ich Notizen mit meiner Gruppe teilen können, um sicherzustellen, dass alle Gruppenmitglieder die nötigen Informationen haben."
+> 
+
+**Akzeptanzkriterien:**
+
+- Der Group Leader kann Notizen einer Gruppe zuweisen.
+- Der Group Leader kann bestehende Notizen bearbeiten und löschen.
+- Die Gruppenmitglieder können die geteilten Notizen lesen.
+
+## UML-Diagramm
+
+![3.jpg](3.jpg)
